@@ -1,0 +1,7 @@
+site_name: My Docs
+markdown_extensions:
+  - footnotes
+  - def_list
+  - abbr
+  - pymdownx.snippets
+  - pymdownx.tasklist
