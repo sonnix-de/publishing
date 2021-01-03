@@ -1,20 +1,10 @@
-# Markdown Features
+# Beispielsdokument
 
-
---8<-- "glossar.md"
-
-
+Dieses Beispielsdokument soll alle Features verwenden, die im Publishing Workflow umgesetzt werden können.
 
 Auf dieser Seite werden die grundstätzlichen Markdown-Features dargestellt, die mkdcos unterstützt.
 
-Dabei ist zu beachten, das Extension vom Typ **pymadownx** extra installiert werden müssen.
-
-```
-pip3 install mkdocs-pymdownx-material-extras
-```
-
-## Fußnoten
-
+## Fussnoten
 Lorem ipsum[^tesafilm] dolor sit amet, consectetur adipiscing elit.[^2]
 
 [^tesafilm]: Fussnote A 1 orem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -27,26 +17,14 @@ Lorem ipsum[^tesafilm] dolor sit amet, consectetur adipiscing elit.[^2]
 
 Eine Definition-List stellt eine einfache Möglichkeit für die Begriffsdefinition dar.
 
-Dies kann z.B. in einem Gloassar verwendet werden.
-
 Apple
 :   Pomaceous fruit of plants of the genus Malus in the family Rosaceae.
 
 Orange
 :   The fruit of an evergreen tree of the genus Citrus.
 
-```
-Apple
-:   Pomaceous fruit ...
-
-Orange
-:   The fruit of an evergreen ...
-```
-
 
 ## Taskslists 
-
-ist Ebenfalls abhängig von [pyMdown Exitions](PyMDown%20Extensions.md)
 
 - [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
 - [ ] Vestibulum convallis sit amet nisi a tincidunt
@@ -59,33 +37,12 @@ ist Ebenfalls abhängig von [pyMdown Exitions](PyMDown%20Extensions.md)
 ## Abkürzungen
 
 Die Begriffe HTML, SGML und W3C werden im Glossar definiert.
-
 (die Definitionen sind in den additional_files/glossar hinterlegt)
 
-Zugehöriges Markdown 
 
-```
+
 *[HTML]: Hyper Text Markup Language
 *[W3C]: World Wide Web Consortium
-```
-
-## Glossar
-
-Mit Snippets kann Inhalt von anderen Dateien includiert werden. Z.B. kann dies von einem Abkürzungsverzeichnis - einem Glossar verwendet werden.
-
-
---8<-- "glossar.md"
-
-
-## Tabellen
-
-| Spalte1                                  | Spalte2                                  |
-|------------------------------------------|------------------------------------------|
-| ![bild1](img/IMG_20201210_202038966.jpg) | ![bild1](img/IMG_20201210_202038966.jpg) |
-| col21                                    | ![bild1](img/IMG_20201210_202038966.jpg) |
-
-
-
 
 
 ## Formeln
@@ -93,14 +50,11 @@ Mit Snippets kann Inhalt von anderen Dateien includiert werden. Z.B. kann dies v
 Notation zum Einbinden einer Datei bzw. für mehrere Dateien
 When inserting your snippet, it is important to remember that some snippets may need whitespace around them.
 
-```
 
+## Tabellen
 
+| Spalte1 | Spalte2 |
+|---------|---------|
+| col11   | col12   |
+| col21   | col22   |
 
---8<--
-filename.md
-filename.log
---8<--
-
-```
-noch ein Text

@@ -1,0 +1,28 @@
+---
+title: |
+  Ein Buch
+subtitle: |
+  Kollaboratives Schreiben umfangreicher Dokumente
+author:
+  - Hans-Jürgen Sonnleitner
+extratitle: false
+lang: de-de
+colorlinks: true
+links-as-notes: false
+papersize: a4
+fontsize: 12pt
+numbersections: true
+toc-depth: 3
+lof: true
+classoption:
+  - oneside
+  - headings=small
+toc: true
+linestretch: 1
+
+# Bibliografie
+bibliography: references.bib
+csl: ../ctl/dgp.csl
+
+# Zusätzliche LaTeX-Pakete
+---

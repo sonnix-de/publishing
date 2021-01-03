@@ -1,7 +1,11 @@
-site_name: My Docs
+site_name: Publishing Features
+theme:
+  name: material
+  language: de
 markdown_extensions:
+  - pymdownx.snippets
   - footnotes
   - def_list
   - abbr
-  - pymdownx.snippets
   - pymdownx.tasklist
+  - attr_list
