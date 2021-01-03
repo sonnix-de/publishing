@@ -1,9 +1,6 @@
-# Markdown Features
+# Elemente der Textverarbeitung
 
-
---8<-- "glossar.md"
-
-
+Dieses Zusammenstellung ist von der Seite [Material for MKDocs](https://squidfunk.github.io/mkdocs-material/) abgeleitet und für die Ausgabe in mehrere Formate geprüft worden.
 
 Auf dieser Seite werden die grundstätzlichen Markdown-Features dargestellt, die mkdcos unterstützt.
 
@@ -79,12 +76,15 @@ Mit Snippets kann Inhalt von anderen Dateien includiert werden. Z.B. kann dies v
 
 ## Tabellen
 
-| Spalte1                                  | Spalte2                                  |
-|------------------------------------------|------------------------------------------|
-| ![bild1](img/IMG_20201210_202038966.jpg) | ![bild1](img/IMG_20201210_202038966.jpg) |
-| col21                                    | ![bild1](img/IMG_20201210_202038966.jpg) |
+Zur Ausgabe von div. Daten sind Tabellen hilfreich. Man sollte sich aber davor hüten, ein bestimmtes Design mit Tabellen "durchzusetzen". Dies ist Aufgabe von Templates! Ansonsten werden aktuelle oder künftige Vorlagen vom Inhalt zerschossen und eine Trennung von Layout und Inhalt ist dann nicht mehr möglich.
+
+| Spalte1 | Spalte2               |
+| ------- | --------------------- |
+| col1    | ![bild1](img/ex1.png) |
+| col21   | ![bild1](img/ex2.png) |
 
 
+Eine einfachere Bearbeitung von Tabellen im Markdown kann z.B. durch passende Plugins in Visual Code ermöglicht werden.
 
 
 
@@ -95,12 +95,51 @@ When inserting your snippet, it is important to remember that some snippets may 
 
 ```
 
-
-
---8<--
-filename.md
-filename.log
---8<--
-
 ```
-noch ein Text
+
+
+## Bilder
+
+Bilder stellen für den Export nach Latex, Word und PDF des öfteren ein Problem dar.
+Z.B. ist es auffällig, das bei MKdocs eine andere Rotation vervewendet wird, als bei pdf und latex.
+
+Um nun eine erwünschte Ausgabe zu bekommen, sind nachfolgend ein paar funktionierende Fälle aufgeführt.
+
+Eine **Skalierung** der Bilder kann mit px oder mit Prozentangaben erreicht werden. Wird zwischen den Bildern eine Leerzeile gelassen, interpretiert der Markdown-Export dies als "Figure" Element.
+
+![Bildunterschrift1](img/ex3.png){width=80px}
+
+![Bildunterschrift2](img/ex4.png){width=180px}
+
+Wird jedoch keine Leerzeile gesetzt, werden die Bilder inline ausgegeben. So kann man z.B. die einfache Einbettung von Symbolen im Text erreichen oder auch ganze Bilderübersichten erstellen. 
+
+Hier ein inline Beispiel ![inline Beispiel](img/ex.png){width=20px} im Text. In der Dokumentausgabe wird auch z.B. eine Angabe von `height=2em` akzeptiert. Komischerweise werden Angaben zur Höhe (`height=200px`) in der HTML-Ausgabe ignoriert.
+
+
+Wenn die Größenangabe in Prozent erfolgt, kann damit auch eine Ausgabe gut geplant werden.
+
+* [ ] Hier wäre es noch interessant, diese mit Links versehen zu können.
+
+Beispiel für eine Bildergallerie
+
+![Bildunterschrift 3](img/ex2.png){width=30%}
+![Bildunterschrift 4](img/ex.png){width=30%}
+![Bildunterschrift 5](img/ex.png){width=30%}
+![Bildunterschrift 3](img/ex2.png){width=30%}
+![Bildunterschrift 4](img/ex.png){width=30%}
+![Bildunterschrift 5](img/ex.png){width=30%}
+
+
+
+## Bild in Tabellen
+
+| Spalte1                          | Spalte2                          |
+| -------------------------------- | -------------------------------- |
+| ![bild1](img/ex2.png){width=45%} | ![bild2](img/ex2.png){width=45%} |
+| ![bild1](img/ex2.png){width=45%} | ![bild2](img/ex2.png){width=45%} |
+| col21                            | col22                            |
+---
+
+
+--8<-- "additional_files/abbreviations.md"
+
