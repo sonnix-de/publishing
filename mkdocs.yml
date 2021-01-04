@@ -1,11 +1,18 @@
 site_name: Publishing mit MKDocs
+plugins:
+   - search
 theme:
   name: material
   language: de
+  palette:
+    scheme: slate
 markdown_extensions:
-  - pymdownx.snippets
+  - pymdownx.snippets # include Files
   - footnotes
-  - def_list
-  - abbr
-  - pymdownx.tasklist
-  - attr_list
+  - def_list 
+  - abbr # Abbreviations
+  - pymdownx.tasklist 
+  - pymdownx.tabbed # Tabbed pages
+  - pymdownx.superfences # Tabbed pages
+  - attr_list #für Images
+  - pymdownx.magiclink

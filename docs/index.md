@@ -22,7 +22,7 @@ Da es kein wysiwyg untersützt, kann es grundsätzlich für die Ausgabe in mehre
 ## Donald Knuth
 
 Donald Knutz, Jahrgang 1936, war Professor für theoritsche Informatik an der Stantfort University.
-Informationen über Donald Knuth
+
 
 ## Tex
 
@@ -55,19 +55,28 @@ Folgende Transformationen sollen gemacht werden:
 
 ## Pandoc
 
-Pandoc ist ein erstaunliches Werkzeug. Der Linguistik Professors __NameDesProfessors__ in Stantfort hat dabei eine Software geschaffen, das es erlaubt von html ausgehend 
+[Pandoc](https://pandoc.org/) ist ein erstaunliches Werkzeug. Der Philosopie Professor [John MacFarlane](https://johnmacfarlane.net/) hat eine Software geschaffen, das es erlaubt von verschiedenen Quellformanten ausgehend in andere Formate umzuwandeln. 
+
+Quellformate können z.B. sein:
+* word (docx, odt)
+* html 
+* wikis
+* markdown
+
+Zielformate sind z.B. 
+
+* html 
+* pdf
+* odt.
 
 Einfache Beispiele:
 
 Umwandlung zu html:
  
-<code bash>
+``` bash
   pandoc -o example.html example.md
-</code>
-<code bash>
   pandoc -o example.pdf example.md
-</code>
-
+```
 
 ## 
 
@@ -78,12 +87,6 @@ Umwandlung zu html:
 * 
 
 Wie kann eine Transformation
-
-
-# Begriffe
-
-* Ligaturen
-* 
 
 # Quellen:
 
