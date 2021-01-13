@@ -11,12 +11,13 @@ Neben den Basisprogrammen (Dateimanager, Browser, Einstellungen) bringt es auch 
 Mit dieser Ausstattung können Sie sofort loslegen, Texte und Präsentationen zu verfassen, im Internet reserchieren oder Software zu entwicklen.
 
 
-
 ---
 
-!!! Hinnweis
+!!! Hinweis
     Linux ist **Open Source** und damit sicher, transparent und kostenlos einsetzbar. Außerdem ist es deutlich schneller als Windows 10 und damit für ältere Computer wesentlich besser geeignet.
     Mehr Information zu Freier Software finden sie [hier](https://de.wikipedia.org/wiki/Freie_Software)
+
+    Falls Sie es nicht gut finden, wenn Ihre Daten im 
 
 Durch die durchdachte Oberfläche, die gute Ausstattung und die einfache Bedienung macht es Spass mit Mint zu arbeiten. Ich hoffe, Sie können diese Erfahrung mit uns teilen! :smile:
 
